@@ -1,0 +1,108 @@
+.topnav {
+    overflow: hidden;
+    background-color: palevioletred;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: lightskyblue;
+    color: f2f2f2;
+  }
+  
+  .topnav a.active {
+    background-color: lightskyblue;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+  .pie {
+    display:block;
+    width: max-content;
+    overflow: hidden;
+    background-color: palevioletred;
+    color: white;
+    height: 20px;
+  }
+  .container1 {
+    font-size: 1rem;
+  }
+  .img_usuario {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .anclas {
+    border-radius: 3px;
+    letter-spacing: 6px;
+    text-decoration: none;
+    background-color: palevioletred;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .cajas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #caja2 {
+    visibility: hidden;
+    transition: height .4s;
+    text-align: center;
+  }
+
+  #caja3 {
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+    transition: height .4s;
+    text-align: center;
+    align-items: center;
+  }
+
+
+  .disponible {
+    color: rgb(105, 167, 12);
+    font-size: 120%;
+  }
+
+  .no_disponible {
+    color: red;
+    font-size: 120%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
